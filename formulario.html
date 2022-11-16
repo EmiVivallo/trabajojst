@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Css/Estilo.css" rel="stylesheet">
+    <title>Formulario TP6</title>
+    <script src="JS/script.js"></script>
+    </head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header> 
+    <form action="#" method="post" name="form" onsubmit="return validar();">  
+    <div class="container">
+         
+        Nombre: <br> <input type="text" name="nombre"  placeholder="nombre"> <br>
+        Apellido: <br> <input type="text" name="apellido" placeholder="apellido"> <br>
+
+         <div class="calculo">
+            <p> Por sistema de seguridad <br> resolver este calculo: 10*14/5</p>
+            <label for="calculo">Validacion</label> <br>
+            <input type="number" name="calculo">
+            <p name="calculo"></p>
+         </div>
+        </form>
+         <div class="button">    
+            <button type="submit" onclick="validar();"> Enviar datos </button>
+         </div>
+    </div>
+</body>
+</html>
